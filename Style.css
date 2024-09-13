@@ -1,0 +1,91 @@
+/* style.css */
+
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o container principal */
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#start-button, #reset-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#show-lines-button {
+    width: 2cm;
+    height: 2cm;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estiliza os quadrantes */
+#quadrants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.quadrant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+.number {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Sublinhado dos números específicos */
+.number-6, .number-9 {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #start-button, #reset-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #show-lines-button {
+        margin-top: 10px;
+    }
+
+    .quadrant {
+        width: 100%;
+        max-width: none;
+    }
+}
