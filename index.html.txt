@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Título</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="controls">
+        <button id="start-button">Iniciar</button>
+        <span id="timer">00:00</span>
+        <button id="reset-button">Reiniciar</button>
+    </div>
+    <button id="show-lines-button"></button>
+    <div id="quadrants">
+        <div class="quadrant" id="quadrant-a"></div>
+        <div class="quadrant" id="quadrant-b"></div>
+        <div class="quadrant" id="quadrant-c"></div>
+        <div class="quadrant" id="quadrant-d"></div>
+        <div class="quadrant" id="quadrant-e"></div>
+        <div class="quadrant" id="quadrant-f"></div>
+        <div class="quadrant" id="quadrant-g"></div>
+        <div class="quadrant" id="quadrant-h"></div>
+        <div class="quadrant" id="quadrant-i"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
